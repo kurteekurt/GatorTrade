@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    
+    <section class="profile-section">
+        <div class="profile-card">
+            <img src="image/arthur.jpg" alt="Profile Picture" class="profile-image">
+            <div class="info">
+                <h2>Chia-Tung Liu</h2>
+                <p><strong>Age:</strong> 21</p>
+                <p><strong>Location:</strong> San Francisco, CA</p>
+                <p><strong>Education:</strong> Bachelor's Degree in Computer Science</p>
+                <p><strong>Hobbies:</strong> Cooking, Gaming, Drawing, and playing basketball</p>
+                <p><strong>Favorite Quote:</strong> "Tight, tight, tight! Oh... blue, yellow, pink!" – Tuco Salamanca</p>
+            </div>
+        </div>
+
+        <!-- New Introduction Section -->
+        <div class="introduction">
+            <h3>Introduction</h3>
+            <p>Hi, my name is Chia Tung Liu, but you can also call me Arthur. 
+                I'm an international student from Taiwan, currently studying computer science. 
+                I'm the front-end lead for this project. This is my first time extensively designing the front end, 
+                and I think it's a great learning experience.</p>
+        </div>
+    </section>
+    <button class="nav-link back-button" onclick="goBack()">Go Back</button>
+    <footer>
+        <p>&copy; 2025 Group Project. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.location.href = 'IntroPage.html';
+        }
+    </script>
+</body>
+</html>

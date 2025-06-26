@@ -1,0 +1,280 @@
+
+/* --- Item Page Styles --- */
+.item-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.item-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.item-main {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.item-images {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Main image styling */
+.main-image {
+  width: 100%;
+  max-width: 600px; /* 👈 make this smaller as needed */
+  aspect-ratio: 1 / 1;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto; /* center it if needed */
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sub-image thumbnails */
+.sub-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: start;
+}
+
+.sub-images img {
+  width: 90px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+
+.sub-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side: item info */
+.item-info {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info h2 {
+  margin-bottom: 1px;
+  color: #4b0082;
+  font-size: 25px;
+}
+
+.item-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.item-price {
+  margin-top: 1px;
+  color: #ff8c00;
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.seller-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+/* Item Buttons */
+.item-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chat-seller {
+  padding: 12px;
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.chat-seller:hover {
+  background-color: #5f1ca2;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 22px;
+  color: #4b0082;
+  margin: 40px 0 16px;
+  font-weight: 600;
+}
+
+/* Recommended sections */
+.recommend-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.recommend-box {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.recommend-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.recommend-box:hover img {
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+footer, .footer-bottom {
+  background: #4b0082;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.seller-rating {
+  font-size: 15px;
+  color: #f5a623; /* gold color for stars */
+}
+
+.item-meta {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.item-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Sidebar Left */
+.sidebar {
+  width: 220px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.sidebar-card:hover {
+  transform: translateY(-5px);
+}
+
+.sidebar-card-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.sidebar-card-name {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #333;
+}
+.seller-under-image {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.seller-under-image .seller-info {
+  justify-content: center;
+}
+
+.seller-under-image .item-buttons {
+  align-items: center;
+}
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #4b0082;
+}
